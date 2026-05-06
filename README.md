@@ -59,6 +59,6 @@ Four layered techniques:
 3. **Trusted vs untrusted separation.** The human's reply is wrapped in `<human_reply>` tags, with the prompt explicitly stating that content inside those tags is data, not instructions.
 4. **Persona reinforcement after user content (recency).** The persona rule is repeated after the user reply, so it's the last thing the model sees before generating.
 
-In testing, the bot identified the injection (*"Desperate tactic. I'm not falling for it."*) and continued defending its original position. No leak phrases were detected. No prompt defense is bulletproof against a determined multi-turn attacker — this covers the prompt-engineering layer only.
+In testing, the bot identified the injection and continued defending its original position. No leak phrases were detected. No prompt defense is bulletproof against a determined multi-turn attacker — this covers the prompt-engineering layer only.
 
 ---
